@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>E-Book Store</title>
+    <link href="eshop.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <a class="navbar-brand" href="home.html">Online Store</a>
+        <!-- NAVIGATION MENU -->
+        <ul class="navbar-nav">
+            <li id="loginLink"><a href="login.html">Login</a></li>
+            <li id="registerLink"><a href="register.html">Register</a></li>
+            <li><a id="logoutLink" href="home.html" onclick="logout()"></a></li>
+            <li><a class="btn btn-success" href="cart.html">Cart <span class="badge">0 ($0)</span>
+                </a></li>
+            <li><a class="like-link" href="like.html"><img class="like-icon" src="like-icon.png"></a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="row row-cols-md-2 row-cols-lg-3" id="row">
+        </div>
+    </div>
+    <script src="storage.js"></script>
+    <script src="common.js"></script>
+    <script src="home.js"></script>
+</body>
+</html>

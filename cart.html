@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cart</title>
+    <link href="eshop.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <a class="navbar-brand" href="home.html">Online Store</a>
+        <!-- NAVIGATION MENU -->
+        <ul class="navbar-nav">
+            <li id="loginLink"><a href="login.html">Login</a></li>
+            <li id="registerLink"><a href="register.html">Register</a></li>
+            <li><a id="logoutLink" href="home.html" onclick="logout()"></a></li>
+            <li><a class="btn btn-success" href="cart.html">Cart <span class="badge">0 ($0)</span>
+            </a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="flex-center">
+            <table class="cartTable">
+                <thead>
+                <tr>
+                    <th style="width: 15%;"></th>
+                    <th style="width: 55%;">Product</th>
+                    <th style="width: 15%;">Price</th>
+                    <th style="width: 15%;"></th>
+                </tr>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td></td>
+                    <td style="text-align: right">Total</td>
+                    <td id="totalPrice"></td>
+                    <td>
+                        <a href="home.html" class="btn btn-success" onclick="checkout()">Checkout</a>
+                    </td>
+                </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <script src="storage.js"></script>
+    <script src="common.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>
